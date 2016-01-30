@@ -5,12 +5,6 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <scripts name="scripts">
-    <script>scripts\scr_menu.gml</script>
-  </scripts>
-  <fonts name="fonts">
-    <font>fonts\fnt_menu</font>
-  </fonts>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
     <sprite>sprites\sprite0</sprite>
@@ -24,6 +18,12 @@
     <background>background\TorchBackground_bkg</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_menu</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_menu</object>
     <object>objects\PersistantGameData_obj</object>
