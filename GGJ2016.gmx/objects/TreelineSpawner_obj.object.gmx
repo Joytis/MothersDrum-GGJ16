@@ -25,16 +25,59 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initization script
+            <string>spawnTree = false;
+angle = 0;
 
-//Terrain spawner is created in the TorchSpawnerSystem!
-LTreeSpawner1 = instance_create(x, y, TreelineSpawner_obj);
-RTreeSpawner1 = instance_create(x, y, TreelineSpawner_obj);
-LTreeSpawner1.angle = -50;
-LTreeSpawner1.tox *= -1;
-RTreeSpawner1.angle = 50;
+tox = 0;
 
 
+//CHANGE THIS TO A RANDOM NUMBER
+idex = 0;
+delay = irandom_range(15,60); //measured in frames;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(idex &gt;= delay)
+{
+    spawnTree = true;
+    idex = 0;
+    delay = irandom_range(global.TLFreq1,global.TLFreq2);
+}
+else
+{
+    idex += 1;
+}
+
+if(spawnTree == true)
+{
+    tre = instance_create(global.OX + tox, global.OY, Tree1_obj);
+    tre.direction += angle;
+    tre.tox = self.tox
+    if(tre.direction &lt; 270)
+    {
+        tre.SCALE *= -1;
+    }
+    spawnTree = false;
+}
 </string>
           </argument>
         </arguments>

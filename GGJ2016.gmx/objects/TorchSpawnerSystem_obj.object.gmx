@@ -31,8 +31,6 @@
 // Private helper members
 //------------------------
 
-offset = 16;
-
 XTorchOffset = 210;
 YTorchOffset = 334;
 
@@ -47,12 +45,13 @@ y = 0;
 // Create torch spawners relative to System spawn location
 LTorchSpawner = instance_create(x - XTorchOffset, y + YTorchOffset, TorchSpawnerNode_obj);
 RTorchSpawner = instance_create(x + XTorchOffset, y + YTorchOffset, TorchSpawnerNode_obj);
-LTorchSpawner.angle = -60;
-RTorchSpawner.angle = 60;
-
-
+LTorchSpawner.angle = -40;
+RTorchSpawner.angle = 35;
 
 TorchBeatBox = instance_create(x, y + YBBOffset, TorchBeatBox_obj);
+
+//TERRAIN SPAWNER INIT
+TSpawner = instance_create(x, y, TerrainSpawnerSystem_obj);
 
 //----------------------------
 //Beatmap Member Variables
