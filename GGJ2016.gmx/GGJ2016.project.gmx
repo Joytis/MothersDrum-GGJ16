@@ -11,14 +11,33 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprites name="Tests">
+      <sprite>sprites\Tree1_spr</sprite>
       <sprite>sprites\tree_test_obj</sprite>
+      <sprite>sprites\Tree2_spr</sprite>
+    </sprites>
+    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\torch_spr</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\Bush1_spr</sprite>
+    <sprites name="Shrubs">
+      <sprite>sprites\Shrub1_spr</sprite>
+      <sprite>sprites\Shrub2_spr</sprite>
+      <sprite>sprites\Shrub4_spr</sprite>
+      <sprite>sprites\Shrub3_spr</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
+    <background>background\TorchBackground2_bkg</background>
+    <background>background\TorchBackground3_bkg</background>
+    <background>background\TorchBackground4_bkg</background>
+    <background>background\you_lose</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_friend.gml</script>
+    <script>scripts\script0.gml</script>
+    <script>scripts\calculatescale.gml</script>
     <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -27,6 +46,20 @@
   <objects name="objects">
     <object>objects\obj_menu</object>
     <object>objects\PersistantGameData_obj</object>
+    <objects name="TerrainSystem">
+      <object>objects\TerrainSpawnerSystem_obj</object>
+      <object>objects\TerrainSpawner_obj</object>
+      <object>objects\TreelineSpawner_obj</object>
+      <object>objects\Tree1_obj</object>
+      <object>objects\Tree2_obj</object>
+      <object>objects\Bush1_obj</object>
+      <objects name="shrubs">
+        <object>objects\Shrub1_obj</object>
+        <object>objects\Shrub2_obj</object>
+        <object>objects\Shrub3_obj</object>
+        <object>objects\Shrub4_obj</object>
+      </objects>
+    </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
       <object>objects\Torch_obj</object>
@@ -36,10 +69,16 @@
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
+    <object>objects\friend_obj</object>
+    <object>objects\friend_controller_obj</object>
+    <object>objects\object15</object>
+    <object>objects\spirited_away_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\perspective_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
+    <room>rooms\friends_test_rm</room>
+    <room>rooms\perspective_test_rm</room>
+    <room>rooms\lose_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

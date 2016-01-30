@@ -27,12 +27,40 @@
             <kind>1</kind>
             <string>/// Initialization Script
 
-var cps = 60 //Cycles per second
+cps = 60 //Cycles per second
 
-var bpm = 120;
-var bps = bpm/60;
+bpm = 120;
+bps = bpm/60;
 
-var cpb = cps / bps; //Cycles per beat
+cpb = cps / bps; //Cycles per beat
+
+Lindex = 0;
+Ldelay = 0;
+
+Rindex = 0;
+Rdelay = 0;
+
+LStream[0] = 4;
+LStream[1] = 4;
+LStream[2] = 4;
+LStream[3] = 4;
+LStream[4] = 4;
+LStream[5] = 4;
+LStream[6] = 4;
+LStream[7] = 4;
+
+
+RStream[0] = 2;
+RStream[1] = 4;
+RStream[2] = 4;
+RStream[3] = 4;
+RStream[4] = 4;
+RStream[5] = 4;
+RStream[6] = 4;
+RStream[7] = 4;
+
+
+
 
 
 </string>

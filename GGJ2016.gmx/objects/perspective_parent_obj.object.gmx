@@ -94,7 +94,7 @@ depth = -y;
             <kind>1</kind>
             <string>var drawx,scale;
 
-drawx = x + ( ( (y-horizon_y) ) * sign( x-(room_width/2) ) ) ;
+drawx = x + (((y-horizon_y)) * sign(x-(room_width/2)));
 scale = 0.1+(max(y-horizon_y,0)/(room_height-horizon_y))*horizon_y_factor;
 
 //scale = floor(scale*10)/10;
