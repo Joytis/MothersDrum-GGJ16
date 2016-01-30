@@ -35,6 +35,14 @@ global.has_won = false;
 // Initializes life to three
 global.life_state = 3;
 
+//Global variable for origin
+global.OX = 512;
+global.OY = 200;
+global.HOZ = 400;
+global.tScale = 4;
+
+global.PSpeed = 6;
+
 
 
 

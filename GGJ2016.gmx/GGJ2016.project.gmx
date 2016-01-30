@@ -17,6 +17,10 @@
     <background>background\TorchBackground_bkg</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+    <script>scripts\calculatescale.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\PersistantGameData_obj</object>
     <objects name="TorchSystem">
@@ -30,8 +34,8 @@
     <object>objects\perspective_test_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\perspective_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
+    <room>rooms\perspective_test_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
