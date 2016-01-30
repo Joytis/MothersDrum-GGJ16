@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_menu</sprite>
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
@@ -20,9 +21,20 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+<<<<<<< HEAD
     <script>scripts\scr_friend.gml</script>
   </scripts>
+=======
+    <script>scripts\script0.gml</script>
+    <script>scripts\calculatescale.gml</script>
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_menu</font>
+  </fonts>
+>>>>>>> origin/master
   <objects name="objects">
+    <object>objects\obj_menu</object>
     <object>objects\PersistantGameData_obj</object>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
@@ -37,10 +49,15 @@
     <object>objects\friend_controller_obj</object>
   </objects>
   <rooms name="rooms">
+<<<<<<< HEAD
     <room>rooms\friends_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
+=======
+    <room>rooms\TorchTestRoom_rm</room>
+    <room>rooms\perspective_test_rm</room>
+>>>>>>> origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
