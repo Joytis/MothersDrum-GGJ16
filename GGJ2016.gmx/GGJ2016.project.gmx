@@ -13,11 +13,8 @@
     <sprites name="Tests">
       <sprite>sprites\tree_test_obj</sprite>
     </sprites>
-<<<<<<< HEAD
     <sprite>sprites\sprite4</sprite>
-=======
     <sprite>sprites\torch_spr</sprite>
->>>>>>> 63f7809122e853def88e0ac1df4e434aba042410
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -25,10 +22,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-<<<<<<< HEAD
     <script>scripts\scr_friend.gml</script>
-  </scripts>
-=======
     <script>scripts\script0.gml</script>
     <script>scripts\calculatescale.gml</script>
     <script>scripts\scr_menu.gml</script>
@@ -36,7 +30,6 @@
   <fonts name="fonts">
     <font>fonts\fnt_menu</font>
   </fonts>
->>>>>>> origin/master
   <objects name="objects">
     <object>objects\obj_menu</object>
     <object>objects\PersistantGameData_obj</object>
@@ -49,25 +42,17 @@
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
-<<<<<<< HEAD
     <object>objects\friend_obj</object>
     <object>objects\friend_controller_obj</object>
-=======
     <objects name="TerrainSystem">
       <object>objects\TerrainSpawnerSystem_obj</object>
     </objects>
->>>>>>> 63f7809122e853def88e0ac1df4e434aba042410
   </objects>
   <rooms name="rooms">
-<<<<<<< HEAD
     <room>rooms\friends_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
-=======
-    <room>rooms\TorchTestRoom_rm</room>
-    <room>rooms\perspective_test_rm</room>
->>>>>>> origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
