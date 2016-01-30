@@ -52,7 +52,6 @@
       <object>objects\TreelineSpawner_obj</object>
       <object>objects\Tree1_obj</object>
       <object>objects\Tree2_obj</object>
-      <object>objects\Bush1_obj</object>
       <objects name="shrubs">
         <object>objects\Shrub1_obj</object>
         <object>objects\Shrub2_obj</object>
