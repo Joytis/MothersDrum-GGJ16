@@ -16,6 +16,7 @@
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\torch_spr</sprite>
     <sprite>sprites\Tree1_spr</sprite>
+    <sprite>sprites\sprite8</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>

@@ -53,12 +53,12 @@
             <kind>1</kind>
             <string>if(global.life_state == 3)
 {
-    draw_sprite_ext(sprite4,image_index,160,384,0.2,0.2,image_angle,c_white,1);
-    draw_sprite_ext(sprite4,image_index,768,384,0.2,0.2,image_angle,c_white,1);
+    draw_sprite_ext(sprite4,image_index,200,384,0.4,0.4,image_angle,c_white,1);
+    draw_sprite_ext(sprite4,image_index,568,384,0.4,0.4,image_angle,c_white,1);
 }
 else if(global.life_state == 2)
 {
-    draw_sprite_ext(sprite4,image_index,160,384,0.2,0.2,image_angle,c_white,1);
+    draw_sprite_ext(sprite4,image_index,200,384,0.4,0.4,image_angle,c_white,1);
 }
 else if(global.life_state == 1)
 {
