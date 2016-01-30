@@ -33,6 +33,7 @@
     <background>background\TorchBackground3_bkg</background>
     <background>background\TorchBackground4_bkg</background>
     <background>background\you_lose</background>
+    <background>background\you_win</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -79,6 +80,7 @@
     <room>rooms\friends_test_rm</room>
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
+    <room>rooms\win_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
