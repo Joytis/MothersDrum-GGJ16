@@ -25,17 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spawnTree = false;
+            <string>///INIT TO 0
+
+DEPTH = 0;
+
+spawnTree = false;
 angle = 0;
 
 tox = 0;
 
 trees[0] = Tree1_obj;
 trees[1] = Tree2_obj;
+trees[2] = Shrub4_obj;
 
 //CHANGE THIS TO A RANDOM NUMBER
 idex = 0;
-delay = irandom_range(15,60); //measured in frames;
+delay = irandom_range(15,45); //measured in frames;
 </string>
           </argument>
         </arguments>
@@ -71,9 +76,10 @@ else
 
 if(spawnTree == true)
 {
-    tre = instance_create(global.OX + tox, global.OY, trees[irandom_range(0,1)]);
+    tre = instance_create(global.OX + tox, global.OY, trees[irandom_range(0,array_length_1d(trees)-1 )]); //gross
     tre.direction += angle;
     tre.tox = self.tox
+    tre.depth = DEPTH;
     if(tre.direction &lt; 270)
     {
         tre.SCALE *= -1;
