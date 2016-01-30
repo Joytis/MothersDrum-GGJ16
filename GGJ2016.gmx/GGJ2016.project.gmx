@@ -5,9 +5,28 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\TorchBackground_bkg</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\PersistantGameData_obj</object>
+    <objects name="TorchSystem">
+      <object>objects\TorchSpawnerNode_obj</object>
+      <object>objects\Torch_obj</object>
+      <object>objects\TorchSpawnerSystem_obj</object>
+      <object>objects\BeatMap_obj</object>
+      <object>objects\TorchBeatBox_obj</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\TorchTestRoom_rm</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
