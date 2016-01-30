@@ -18,6 +18,13 @@
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\torch_spr</sprite>
     <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\Bush1_spr</sprite>
+    <sprites name="Shrubs">
+      <sprite>sprites\Shrub1_spr</sprite>
+      <sprite>sprites\Shrub2_spr</sprite>
+      <sprite>sprites\Shrub4_spr</sprite>
+      <sprite>sprites\Shrub3_spr</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -41,9 +48,17 @@
     <object>objects\PersistantGameData_obj</object>
     <objects name="TerrainSystem">
       <object>objects\TerrainSpawnerSystem_obj</object>
+      <object>objects\TerrainSpawner_obj</object>
       <object>objects\TreelineSpawner_obj</object>
       <object>objects\Tree1_obj</object>
       <object>objects\Tree2_obj</object>
+      <object>objects\Bush1_obj</object>
+      <objects name="shrubs">
+        <object>objects\Shrub1_obj</object>
+        <object>objects\Shrub2_obj</object>
+        <object>objects\Shrub3_obj</object>
+        <object>objects\Shrub4_obj</object>
+      </objects>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>

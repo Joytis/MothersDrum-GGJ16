@@ -28,8 +28,8 @@
             <string>///Init script
 
 //Treeline Data
-global.TLFreq1 = 15;
-global.TLFreq2 = 60;
+global.TLFreq1 = 30;
+global.TLFreq2 = 90;
 
 // Initialize Persistant game data
 // boolean operator denotating game win state

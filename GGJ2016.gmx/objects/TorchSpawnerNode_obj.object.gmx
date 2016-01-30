@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spawnTorch = false;
+            <string>DEPTH = 0;
+spawnTorch = false;
 angle = 0;
 </string>
           </argument>
@@ -52,6 +53,7 @@ angle = 0;
             <string>if(spawnTorch == true)
 {
     tch = instance_create(global.OX, global.OY, Torch_obj);
+    tch.depth = DEPTH;
     tch.direction += angle;
     if(tch.direction &lt; 270)
     {
