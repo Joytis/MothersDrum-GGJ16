@@ -13,7 +13,11 @@
     <sprites name="Tests">
       <sprite>sprites\tree_test_obj</sprite>
     </sprites>
+<<<<<<< HEAD
     <sprite>sprites\sprite4</sprite>
+=======
+    <sprite>sprites\torch_spr</sprite>
+>>>>>>> 63f7809122e853def88e0ac1df4e434aba042410
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -45,8 +49,14 @@
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
+<<<<<<< HEAD
     <object>objects\friend_obj</object>
     <object>objects\friend_controller_obj</object>
+=======
+    <objects name="TerrainSystem">
+      <object>objects\TerrainSpawnerSystem_obj</object>
+    </objects>
+>>>>>>> 63f7809122e853def88e0ac1df4e434aba042410
   </objects>
   <rooms name="rooms">
 <<<<<<< HEAD
