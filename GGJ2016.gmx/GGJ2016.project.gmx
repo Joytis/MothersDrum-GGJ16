@@ -57,8 +57,8 @@
     <object>objects\friend_controller_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\friends_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
+    <room>rooms\friends_test_rm</room>
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
   </rooms>
