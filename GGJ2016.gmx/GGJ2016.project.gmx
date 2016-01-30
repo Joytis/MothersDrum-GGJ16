@@ -5,24 +5,41 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites">
-    <sprite>sprites\spr_menu</sprite>
-  </sprites>
-  <backgrounds name="background">
-    <background>background\background0</background>
-  </backgrounds>
-  <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_menu</font>
   </fonts>
+  <sprites name="sprites">
+    <sprite>sprites\spr_menu</sprite>
+    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
+    <sprites name="Tests">
+      <sprite>sprites\tree_test_obj</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\TorchBackground_bkg</background>
+  </backgrounds>
+  <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_menu</object>
+    <object>objects\PersistantGameData_obj</object>
+    <objects name="TorchSystem">
+      <object>objects\TorchSpawnerNode_obj</object>
+      <object>objects\Torch_obj</object>
+      <object>objects\TorchSpawnerSystem_obj</object>
+      <object>objects\BeatMap_obj</object>
+      <object>objects\TorchBeatBox_obj</object>
+    </objects>
+    <object>objects\perspective_parent_obj</object>
+    <object>objects\perspective_test_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\perspective_test_rm</room>
+    <room>rooms\TorchTestRoom_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
