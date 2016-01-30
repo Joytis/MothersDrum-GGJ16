@@ -17,11 +17,7 @@
     </sprites>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\torch_spr</sprite>
-<<<<<<< HEAD
-    <sprite>sprites\Tree1_spr</sprite>
     <sprite>sprites\sprite8</sprite>
-=======
->>>>>>> d615d2839a09636274a28b31d4a6b82fc9f298d3
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -60,6 +56,8 @@
     <object>objects\perspective_test_obj</object>
     <object>objects\friend_obj</object>
     <object>objects\friend_controller_obj</object>
+    <object>objects\object15</object>
+    <object>objects\spirited_away_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TorchTestRoom_rm</room>
