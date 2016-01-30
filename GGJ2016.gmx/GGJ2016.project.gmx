@@ -5,9 +5,20 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Tests">
+      <sprite>sprites\tree_test_obj</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\perspective_parent_obj</object>
+    <object>objects\perspective_test_obj</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\perspective_test_rm</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
