@@ -13,14 +13,17 @@
     <sprites name="Tests">
       <sprite>sprites\tree_test_obj</sprite>
     </sprites>
+    <sprite>sprites\sprite4</sprite>
     <sprite>sprites\torch_spr</sprite>
     <sprite>sprites\Tree1_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
+    <background>background\you_lose</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_friend.gml</script>
     <script>scripts\script0.gml</script>
     <script>scripts\calculatescale.gml</script>
     <script>scripts\scr_menu.gml</script>
@@ -45,10 +48,14 @@
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
+    <object>objects\friend_obj</object>
+    <object>objects\friend_controller_obj</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\friends_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
     <room>rooms\perspective_test_rm</room>
+    <room>rooms\lose_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
