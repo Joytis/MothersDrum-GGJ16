@@ -29,7 +29,7 @@
 
 // 0 means on.
 // 1 means off.
-sprindx = 0;
+sprindx = 1;
 
 calculatescale(global.OX, global.OY, global.HOZ, self, global.tScale);
 
@@ -85,7 +85,7 @@ direction = 270;
 {
     if(SCALE &lt; 0)
     {
-        sprindx = 1;
+        sprindx = 0;
     }
 }
 
@@ -93,7 +93,7 @@ if(keyboard_check_pressed(ord("X")))
 {
     if(SCALE &gt; 0)
     {
-        sprindx = 1;
+        sprindx = 0;
     }
 }
 
@@ -125,6 +125,30 @@ if(keyboard_check_pressed(ord("X")))
     global.life_state -= 1;
 }
 instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///OVERLOADED DRAW EVENT
+draw_sprite_ext(torch_spr, sprindx, x, y, image_xscale, image_yscale, 0, c_white, 100);
 </string>
           </argument>
         </arguments>

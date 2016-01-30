@@ -11,15 +11,23 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprites name="Tests">
+      <sprite>sprites\Tree1_spr</sprite>
       <sprite>sprites\tree_test_obj</sprite>
+      <sprite>sprites\Tree2_spr</sprite>
     </sprites>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\torch_spr</sprite>
+<<<<<<< HEAD
     <sprite>sprites\Tree1_spr</sprite>
     <sprite>sprites\sprite8</sprite>
+=======
+>>>>>>> d615d2839a09636274a28b31d4a6b82fc9f298d3
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
+    <background>background\TorchBackground2_bkg</background>
+    <background>background\TorchBackground3_bkg</background>
+    <background>background\TorchBackground4_bkg</background>
     <background>background\you_lose</background>
   </backgrounds>
   <paths name="paths"/>
@@ -39,6 +47,7 @@
       <object>objects\TerrainSpawnerSystem_obj</object>
       <object>objects\TreelineSpawner_obj</object>
       <object>objects\Tree1_obj</object>
+      <object>objects\Tree2_obj</object>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
@@ -53,8 +62,8 @@
     <object>objects\friend_controller_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\friends_test_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
+    <room>rooms\friends_test_rm</room>
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
   </rooms>
