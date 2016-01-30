@@ -11,13 +11,17 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprites name="Tests">
+      <sprite>sprites\Tree1_spr</sprite>
       <sprite>sprites\tree_test_obj</sprite>
+      <sprite>sprites\Tree2_spr</sprite>
     </sprites>
     <sprite>sprites\torch_spr</sprite>
-    <sprite>sprites\Tree1_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
+    <background>background\TorchBackground2_bkg</background>
+    <background>background\TorchBackground3_bkg</background>
+    <background>background\TorchBackground4_bkg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -35,6 +39,7 @@
       <object>objects\TerrainSpawnerSystem_obj</object>
       <object>objects\TreelineSpawner_obj</object>
       <object>objects\Tree1_obj</object>
+      <object>objects\Tree2_obj</object>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>

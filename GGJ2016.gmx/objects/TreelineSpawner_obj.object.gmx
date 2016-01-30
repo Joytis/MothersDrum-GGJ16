@@ -30,6 +30,8 @@ angle = 0;
 
 tox = 0;
 
+trees[0] = Tree1_obj;
+trees[1] = Tree2_obj;
 
 //CHANGE THIS TO A RANDOM NUMBER
 idex = 0;
@@ -69,7 +71,7 @@ else
 
 if(spawnTree == true)
 {
-    tre = instance_create(global.OX + tox, global.OY, Tree1_obj);
+    tre = instance_create(global.OX + tox, global.OY, trees[irandom_range(0,1)]);
     tre.direction += angle;
     tre.tox = self.tox
     if(tre.direction &lt; 270)
