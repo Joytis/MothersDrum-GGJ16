@@ -25,6 +25,7 @@
       <sprite>sprites\Shrub4_spr</sprite>
       <sprite>sprites\Shrub3_spr</sprite>
     </sprites>
+    <sprite>sprites\spooky</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
