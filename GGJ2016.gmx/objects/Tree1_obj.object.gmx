@@ -55,6 +55,14 @@ direction = 270;
           <argument>
             <kind>1</kind>
             <string>calculatescale(global.OX + tox, global.OY, global.HOZ, self, global.tScale);
+if(x ==  room_width + 100)
+{
+    instance_destroy();
+}
+if(y == room_height + 100)
+{
+    instance_destroy();   
+}
 </string>
           </argument>
         </arguments>
