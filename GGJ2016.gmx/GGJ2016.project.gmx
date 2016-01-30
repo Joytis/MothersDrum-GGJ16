@@ -14,6 +14,7 @@
       <sprite>sprites\tree_test_obj</sprite>
     </sprites>
     <sprite>sprites\torch_spr</sprite>
+    <sprite>sprites\Tree1_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -30,6 +31,11 @@
   <objects name="objects">
     <object>objects\obj_menu</object>
     <object>objects\PersistantGameData_obj</object>
+    <objects name="TerrainSystem">
+      <object>objects\TerrainSpawnerSystem_obj</object>
+      <object>objects\TreelineSpawner_obj</object>
+      <object>objects\Tree1_obj</object>
+    </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
       <object>objects\Torch_obj</object>
@@ -39,9 +45,6 @@
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
-    <objects name="TerrainSystem">
-      <object>objects\TerrainSpawnerSystem_obj</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\TorchTestRoom_rm</room>
