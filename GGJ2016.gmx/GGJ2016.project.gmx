@@ -13,6 +13,7 @@
     <sprites name="Tests">
       <sprite>sprites\tree_test_obj</sprite>
     </sprites>
+    <sprite>sprites\torch_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -38,6 +39,9 @@
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
+    <objects name="TerrainSystem">
+      <object>objects\TerrainSpawnerSystem_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\TorchTestRoom_rm</room>

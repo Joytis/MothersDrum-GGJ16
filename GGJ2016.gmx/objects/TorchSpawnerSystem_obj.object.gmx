@@ -51,8 +51,8 @@ LTorchSpawner.angle = -60;
 RTorchSpawner.angle = 60;
 
 
-LTorchBeatBox = instance_create(x - XTorchOffset , y + YBBOffset, TorchBeatBox_obj);
-RTorchBeatBox = instance_create(x + XTorchOffset, y + YBBOffset, TorchBeatBox_obj);
+
+TorchBeatBox = instance_create(x, y + YBBOffset, TorchBeatBox_obj);
 
 //----------------------------
 //Beatmap Member Variables

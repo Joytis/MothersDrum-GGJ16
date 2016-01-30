@@ -53,6 +53,10 @@ angle = 0;
 {
     tch = instance_create(global.OX, global.OY, Torch_obj);
     tch.direction += angle;
+    if(tch.direction &lt; 270)
+    {
+        tch.SCALE *= -1;
+    }
     spawnTorch = false;
 }
 </string>
