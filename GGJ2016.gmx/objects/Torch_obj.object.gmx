@@ -59,6 +59,15 @@ direction = 270;
           <argument>
             <kind>1</kind>
             <string>calculatescale(global.OX, global.OY, global.HOZ, self, global.tScale);
+
+if(x &gt; room_width + 100 || y &gt; room_height + 100)
+{
+    if(sprindx == 1)
+    {
+        global.life_state -= 1;
+    }
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -83,9 +92,16 @@ direction = 270;
             <kind>1</kind>
             <string>if(keyboard_check_pressed(ord("Z")))
 {
-    if(SCALE &lt; 0)
+    if(sprindx == 0)
     {
-        sprindx = 0;
+        
+    }
+    else
+    {
+        if(SCALE &lt; 0)
+        {
+            sprindx = 0;
+        }
     }
 }
 
