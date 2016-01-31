@@ -16,20 +16,10 @@
     <sound>sound\snd_bush_1</sound>
     <sound>sound\snd_bush_2</sound>
     <sound>sound\snd_light_torch</sound>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> fe87cae9b73b3eea4392761ea0a1f5b24763d111
-=======
->>>>>>> 9339fac5bf66b4d92331d58c8df7b895fd608090
     <sound>sound\snd_footsteps_1</sound>
     <sound>sound\snd_footsteps_2</sound>
     <sound>sound\snd_footsteps_3</sound>
     <sound>sound\snd_footsteps_4</sound>
-<<<<<<< HEAD
-=======
->>>>>>> 7de39aac605039b51986ab3f097724b7b06ef674
->>>>>>> 9339fac5bf66b4d92331d58c8df7b895fd608090
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
