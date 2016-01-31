@@ -37,6 +37,10 @@ tox = 0;
 trees[0] = Shrub1_obj;
 trees[1] = Shrub2_obj;
 trees[2] = Shrub4_obj;
+trees[3] = deb3_obj;
+trees[4] = deb4_obj;
+trees[5] = deb2_obj;
+
 
 //CHANGE THIS TO A RANDOM NUMBER
 idex = 0;

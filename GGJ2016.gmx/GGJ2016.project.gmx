@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\spooky_sound</sound>
     <sound>sound\snd_bg_ambient_loop</sound>
     <sound>sound\snd_ambient_winds</sound>
     <sound>sound\snd_fire_glowing</sound>
@@ -43,12 +44,24 @@
     </sprites>
     <sprite>sprites\spooky</sprite>
     <sprite>sprites\torch2_spr</sprite>
+<<<<<<< HEAD
     <sprites name="menu">
       <sprite>sprites\spr_mother_menu</sprite>
       <sprite>sprites\spr_mountain_menu</sprite>
       <sprite>sprites\spr_mist_menu</sprite>
       <sprite>sprites\spr_menu_text</sprite>
     </sprites>
+=======
+    <sprites name="debris">
+      <sprite>sprites\deb1_spr</sprite>
+      <sprite>sprites\deb2_spr</sprite>
+      <sprite>sprites\deb3_spr</sprite>
+      <sprite>sprites\deb4_spr</sprite>
+      <sprite>sprites\deb5_spr</sprite>
+    </sprites>
+    <sprite>sprites\mount_spr</sprite>
+    <sprite>sprites\mom_spr</sprite>
+>>>>>>> 0e8e78a97bcec0dc601feb93ad1cfe9195f7a933
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -78,6 +91,7 @@
       <object>objects\TerrainSpawnerSystem_obj</object>
       <object>objects\TerrainSpawner_obj</object>
       <object>objects\TreelineSpawner_obj</object>
+      <object>objects\RoadSpawner_obj</object>
       <object>objects\Tree1_obj</object>
       <object>objects\Tree2_obj</object>
       <objects name="shrubs">
@@ -86,7 +100,13 @@
         <object>objects\Shrub3_obj</object>
         <object>objects\Shrub4_obj</object>
       </objects>
-      <object>objects\RoadSpawner_obj</object>
+      <objects name="debris">
+        <object>objects\deb1_obj</object>
+        <object>objects\deb2_obj</object>
+        <object>objects\deb3_obj</object>
+        <object>objects\deb4_obj</object>
+        <object>objects\deb5_obj</object>
+      </objects>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
@@ -100,6 +120,8 @@
     <object>objects\friend_obj</object>
     <object>objects\friend_controller_obj</object>
     <object>objects\spirited_away_obj</object>
+    <object>objects\mount_obj</object>
+    <object>objects\mom_obj</object>
     <object>objects\obj_bgsound_controller</object>
   </objects>
   <rooms name="rooms">

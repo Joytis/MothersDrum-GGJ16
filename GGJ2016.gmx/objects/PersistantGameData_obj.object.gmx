@@ -29,7 +29,7 @@
 
 //Treeline Data
 global.TLFreq1 = 30;
-global.TLFreq2 = 90;
+global.TLFreq2 = 70;
 
 // Initialize Persistant game data
 // boolean operator denotating game win state
