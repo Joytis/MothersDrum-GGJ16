@@ -194,9 +194,6 @@ tmp.SCALE *= -1;
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-            <string></string>
-=======
             <string>if(global.has_won)
 {
     if(audio_is_playing(snd_footsteps_1))
@@ -206,7 +203,6 @@ tmp.SCALE *= -1;
     room_goto(you_win);
 }
 </string>
->>>>>>> rob-vary
           </argument>
         </arguments>
       </action>
