@@ -40,6 +40,8 @@ trees[2] = Shrub4_obj;
 trees[3] = deb3_obj;
 trees[4] = deb4_obj;
 trees[5] = deb2_obj;
+trees[6] = Tree3_obj;
+trees[7] = Shrub5_obj;
 
 
 //CHANGE THIS TO A RANDOM NUMBER

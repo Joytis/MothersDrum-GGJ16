@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>SCALE = 2400;
+            <string>SCALE = 2000;
 depth = 100;
 </string>
           </argument>

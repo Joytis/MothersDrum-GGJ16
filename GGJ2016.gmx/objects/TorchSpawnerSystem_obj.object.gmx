@@ -29,9 +29,10 @@
 
 //MOUNTAIN
 mount = instance_create(512, 200, mount_obj);
-mom = instance_create(675, 200, mom_obj);
+mom = instance_create(512, 170, mom_obj);
 
 signSpawned = false;
+winstatenum = 0;
 
 //------------------------
 // Private helper members
@@ -41,7 +42,7 @@ XTorchOffset = 210;
 YTorchOffset = 334;
 
 XBBOffset = 480;
-YBBOffset = 600;
+YBBOffset = 640;
 
 //Set position to x = 384  y = 0
 x = 512;
@@ -56,7 +57,8 @@ RTorchSpawner.DEPTH = 0;
 LTorchSpawner.angle = -35;
 RTorchSpawner.angle = 35;
 
-TorchBeatBox = instance_create(x, y + YBBOffset, TorchBeatBox_obj);
+TorchBeatBox = instance_create(x - 256, y + YBBOffset, TorchBeatBox_obj);
+TorchBeatBox2 = instance_create(x + 256, y + YBBOffset, TBB2_obj);
 
 //TERRAIN SPAWNER INIT
 TSpawner = instance_create(x, y, TerrainSpawnerSystem_obj);
@@ -88,7 +90,7 @@ Rindex = 0;
 Rdelay = 0;
 
 //IN BEATS
-LStream[0] = 0;
+LStream[0] = 16;
 LStream[1] = 16;
 LStream[2] = 16;
 LStream[3] = 16;
@@ -135,7 +137,7 @@ LStream[44] = 16;
 LStream[45] = 2;
 LStream[46] = 2; //
 
-RStream[0] = 64;
+RStream[0] = 80;
 RStream[1] = 16;
 RStream[2] = 16;
 RStream[3] = 16;
@@ -240,6 +242,11 @@ if(Rdelay &gt; ridex)
     signSpawned = false;
     if(Rindex &gt;= array_length_1d(RStream))
     {
+        winstatenum += 1;
+        if(winstatenum &gt;= 600)
+        {
+            global.has_won = true;
+        }
     }
     else
     {

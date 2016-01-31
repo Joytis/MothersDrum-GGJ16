@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///INIT TO 0
 
-DEPTH = 1;
+DEPTH = 0;
 
 spawnTree = false;
 angle = 0;
