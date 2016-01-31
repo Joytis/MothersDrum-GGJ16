@@ -22,6 +22,13 @@
     <sound>sound\snd_footsteps_4</sound>
     <sound>sound\snd_menu_music</sound>
     <sound>sound\snd_you_win</sound>
+    <sound>sound\snd_drum_1</sound>
+    <sound>sound\snd_drum_2</sound>
+    <sound>sound\snd_drum_3</sound>
+    <sound>sound\snd_drum_4</sound>
+    <sound>sound\snd_drum_5</sound>
+    <sound>sound\snd_drum_6</sound>
+    <sound>sound\snd_drum_7</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
@@ -63,6 +70,8 @@
     </sprites>
     <sprite>sprites\mount_spr</sprite>
     <sprite>sprites\mom_spr</sprite>
+    <sprite>sprites\spr_drum</sprite>
+    <sprite>sprites\spr_mallet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -125,6 +134,7 @@
     <object>objects\mom_obj</object>
     <object>objects\obj_bgsound_controller</object>
     <object>objects\obj_win_room</object>
+    <object>objects\obj_mainDrum</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu_rm</room>
