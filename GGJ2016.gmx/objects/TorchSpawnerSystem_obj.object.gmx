@@ -59,6 +59,11 @@ TorchBeatBox = instance_create(x, y + YBBOffset, TorchBeatBox_obj);
 //TERRAIN SPAWNER INIT
 TSpawner = instance_create(x, y, TerrainSpawnerSystem_obj);
 
+//Sign spawner
+SSpawner = instance_create(x, y, SignSpawnSystem_obj);
+SSpawner.angle = 35;
+SSpawner.spawnTree = false;
+
 //----------------------------
 //Beatmap Member Variables
 //----------------------------
@@ -246,19 +251,31 @@ else
 
 switch(Rindex)
 {
+    case 0:
+    {
+        SSpawner.spawnTree = true;
+        SSpawner.idex = 0;
+    }
+    break
     case 11:
     {
         background_index[0] = TorchBackground2_bkg;
+        SSpawner.spawnTree = true;
+        SSpawner.idex = 1;
     }
     break
     case 24:
     {
         background_index[0] = TorchBackground3_bkg; 
+        SSpawner.spawnTree = true;
+        SSpawner.idex = 2;
     }
     break
     case 38:
     {
         background_index[0] = TorchBackground4_bkg;
+        SSpawner.spawnTree = true;
+        SSpawner.idex = 3;
     }
     break
     default:
