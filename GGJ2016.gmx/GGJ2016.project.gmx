@@ -32,6 +32,7 @@
       <sprite>sprites\Tree1_spr</sprite>
       <sprite>sprites\tree_test_obj</sprite>
       <sprite>sprites\Tree2_spr</sprite>
+      <sprite>sprites\Tree3_spr</sprite>
     </sprites>
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sprite6</sprite>
@@ -101,6 +102,7 @@
       <object>objects\RoadSpawner_obj</object>
       <object>objects\Tree1_obj</object>
       <object>objects\Tree2_obj</object>
+      <object>objects\Tree3_obj</object>
       <objects name="shrubs">
         <object>objects\Shrub1_obj</object>
         <object>objects\Shrub2_obj</object>

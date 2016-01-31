@@ -29,9 +29,10 @@
 
 //MOUNTAIN
 mount = instance_create(512, 200, mount_obj);
-mom = instance_create(675, 200, mom_obj);
+mom = instance_create(512, 170, mom_obj);
 
 signSpawned = false;
+winstatenum = 0;
 
 //------------------------
 // Private helper members
@@ -41,7 +42,7 @@ XTorchOffset = 210;
 YTorchOffset = 334;
 
 XBBOffset = 480;
-YBBOffset = 600;
+YBBOffset = 640;
 
 //Set position to x = 384  y = 0
 x = 512;
@@ -240,6 +241,11 @@ if(Rdelay &gt; ridex)
     signSpawned = false;
     if(Rindex &gt;= array_length_1d(RStream))
     {
+        winstatenum += 1;
+        if(winstatenum &gt;= 600)
+        {
+            global.has_won = true;
+        }
     }
     else
     {

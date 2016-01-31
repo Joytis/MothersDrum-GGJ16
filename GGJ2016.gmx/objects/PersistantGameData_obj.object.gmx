@@ -51,6 +51,125 @@ global.PSpeed = 5;
 global.spiritGrab = 0;
 
 
+//I am literially the worst person on the face of this planet~ Clark
+//SPAWNER SPAWNER! FUCK MY LIFE
+tmp = instance_create(global.OX + 400, global.OY + 400, Tree1_obj);
+tmp.direction += 50;
+tmp = instance_create(global.OX - 400, global.OY + 300, Tree1_obj);
+tmp.direction += -45;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 100, global.OY + 10, Tree1_obj);
+tmp.direction += 85;
+tmp = instance_create(global.OX - 100, global.OY + 10, Tree1_obj);
+tmp.direction += -85;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 400, global.OY + 300, Tree2_obj);
+tmp.direction += 55;
+tmp = instance_create(global.OX - 400, global.OY + 300, Tree2_obj);
+tmp.direction += -55;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX - 150, global.OY + 20, Tree2_obj);
+tmp.direction += -70;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 450, global.OY + 30, Tree2_obj);
+tmp.direction += 73;
+tmp = instance_create(global.OX + 200, global.OY + 150, Shrub1_obj);
+tmp.direction += 55;
+tmp = instance_create(global.OX - 200, global.OY + 100, Shrub1_obj);
+tmp.direction += -55;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 20, global.OY + 5, Shrub2_obj);
+tmp.direction += 80;
+tmp = instance_create(global.OX - 280, global.OY + 15, Shrub2_obj);
+tmp.direction += -85;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 330, global.OY + 280, Shrub4_obj);
+tmp.direction += 57;
+tmp = instance_create(global.OX - 200, global.OY + 65, Shrub4_obj);
+tmp.direction += -53;
+tmp.SCALE *= -1;
+//Somebody kill me _Clark
+tmp = instance_create(global.OX + 45, global.OY + 45, Tree1_obj);
+tmp.direction += 65;
+tmp = instance_create(global.OX + 70, global.OY + 70, Tree2_obj);
+tmp.direction += 65;
+tmp = instance_create(global.OX - 150, global.OY + 30, Shrub2_obj);
+tmp.direction += -77;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 300, global.OY + 100, Shrub3_obj);
+tmp.direction += +77;
+//I hate this. Someone please. 
+tmp = instance_create(global.OX + 203, global.OY + 234, Shrub4_obj);
+tmp.direction += 81;
+tmp = instance_create(global.OX - 400, global.OY + 20, Shrub1_obj);
+tmp.direction += -81;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 250, global.OY + 250, Tree1_obj);
+tmp.direction += 50;
+tmp = instance_create(global.OX - 250, global.OY + 200, Tree1_obj);
+tmp.direction += -50;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 100, global.OY + 100, Tree1_obj);
+tmp.direction += 55;
+tmp = instance_create(global.OX - 100, global.OY + 100, Tree1_obj);
+tmp.direction += -55;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 45, global.OY + 45, Tree1_obj);
+tmp.direction += 60;
+tmp = instance_create(global.OX - 45, global.OY + 45, Tree1_obj);
+tmp.direction += -60;
+tmp.SCALE *= -1;
+// CHECK OUT THIS SPAGHETTI
+tmp = instance_create(global.OX + 15, global.OY + 15, Tree1_obj);
+tmp.direction += 50;
+tmp = instance_create(global.OX - 15, global.OY + 15, Tree1_obj);
+tmp.direction += -50;
+tmp.SCALE *= -1;
+//:c
+tmp = instance_create(global.OX + 25, global.OY + 25, Tree1_obj);
+tmp.direction += 60;
+tmp = instance_create(global.OX - 25, global.OY + 25, Tree1_obj);
+tmp.direction += -60;
+tmp.SCALE *= -1;
+// :'c
+tmp = instance_create(global.OX + 40, global.OY + 8, Shrub1_obj);
+tmp.direction += 55;
+tmp = instance_create(global.OX - 40, global.OY + 8, Shrub1_obj);
+tmp.direction += -55;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 30, global.OY + 7, Shrub2_obj);
+tmp.direction += 80;
+tmp = instance_create(global.OX - 30, global.OY + 7, Shrub2_obj);
+tmp.direction += -85;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 6, global.OY + 6, Shrub4_obj);
+tmp.direction += 57;
+tmp = instance_create(global.OX - 6, global.OY + 6, Shrub4_obj);
+tmp.direction += -53;
+
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 5, global.OY + 5, Tree1_obj);
+tmp.direction += 55;
+tmp = instance_create(global.OX - 5, global.OY + 5, Tree1_obj);
+tmp.direction += -55;
+tmp.SCALE *= -1;
+//I'm hiding comments. Tee hee.
+tmp = instance_create(global.OX - 13, global.OY + 5, Shrub2_obj);
+tmp.direction += -77;
+tmp.SCALE *= -1;
+tmp = instance_create(global.OX + 3, global.OY + 1, Shrub3_obj);
+tmp.direction += +77;
+tmp = instance_create(global.OX + 4, global.OY + 4, Shrub4_obj);
+tmp.direction += 81;
+tmp = instance_create(global.OX - 4, global.OY + 4, Shrub1_obj);
+tmp.direction += -81;
+tmp.SCALE *= -1;
+// kill me
+
+
+
+
+
 
 
 </string>
