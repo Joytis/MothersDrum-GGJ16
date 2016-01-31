@@ -20,6 +20,8 @@
     <sound>sound\snd_footsteps_2</sound>
     <sound>sound\snd_footsteps_3</sound>
     <sound>sound\snd_footsteps_4</sound>
+    <sound>sound\snd_menu_music</sound>
+    <sound>sound\snd_you_win</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
@@ -46,6 +48,12 @@
     </sprites>
     <sprite>sprites\spooky</sprite>
     <sprite>sprites\torch2_spr</sprite>
+    <sprites name="menu">
+      <sprite>sprites\spr_mother_menu</sprite>
+      <sprite>sprites\spr_mountain_menu</sprite>
+      <sprite>sprites\spr_mist_menu</sprite>
+      <sprite>sprites\spr_menu_text</sprite>
+    </sprites>
     <sprites name="debris">
       <sprite>sprites\deb1_spr</sprite>
       <sprite>sprites\deb2_spr</sprite>
@@ -63,6 +71,9 @@
     <background>background\TorchBackground4_bkg</background>
     <background>background\you_lose</background>
     <background>background\you_win</background>
+    <backgrounds name="Menu">
+      <background>background\bg_title_bg</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -109,13 +120,14 @@
     <object>objects\perspective_test_obj</object>
     <object>objects\friend_obj</object>
     <object>objects\friend_controller_obj</object>
-    <object>objects\object15</object>
     <object>objects\spirited_away_obj</object>
     <object>objects\mount_obj</object>
     <object>objects\mom_obj</object>
     <object>objects\obj_bgsound_controller</object>
+    <object>objects\obj_win_room</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\main_menu_rm</room>
     <room>rooms\TorchTestRoom_rm</room>
     <room>rooms\friends_test_rm</room>
     <room>rooms\perspective_test_rm</room>

@@ -25,14 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = floor(room_width/2);
-y = floor(room_height/2);
+            <string>x = floor(room_width * 0.21);
+y = floor(room_height * 0.45);
 menu[0] = "Start";
 menu[1] = "Credits";
 menu[2] = "Quit";
+DropAlpha = 0;
+TextAlpha = 0;
+
+audio_play_sound(snd_menu_music, 10, true);
 
 space = 65;
 mpos = 0;
+
+MotherX     =   0;
+MotherY     =   room_height;
+MistX       =   room_width;
+MistY       =   room_height;
+MountainX   =   room_width;
+MountainY   =   room_height;
+MenuX       =   0;
+MenuY       =   room_height/2 - 100;
 </string>
           </argument>
         </arguments>
@@ -66,7 +79,28 @@ if (move != 0)
     if (mpos &gt; array_length_1d(menu) -1) mpos = 0;
 }
 
-if (keyboard_check_pressed(ord("X"))) scr_menu();
+if (keyboard_check_pressed(vk_enter)) scr_menu();
+
+
+if(MotherX &lt; room_width/2 + 250)
+{
+    MotherX +=      4;
+}else{
+if (TextAlpha &lt; 1){
+    TextAlpha += .04
+}
+}
+
+if(MountainX &gt; room_width/2)
+{
+    MistX -=  3;
+    MountainX -=    3;
+}
+
+if(MenuX &lt; room_width/2 - 200)
+{
+    MenuX += 2;
+}
 
 </string>
           </argument>
@@ -94,20 +128,20 @@ if (keyboard_check_pressed(ord("X"))) scr_menu();
 draw_set_valign(fa_middle);
 draw_set_font(fnt_menu);
 draw_set_color(c_red);
-
-draw_set_alpha(0.5);
-draw_rectangle_colour(100, 100, room_width - 100, room_height - 100, c_black, c_black, c_purple, c_purple, false);
 draw_set_alpha(1);
 
 var m;
 for (m =0; m &lt; array_length_1d(menu); m += 1)
 {
-    draw_text_colour(x + space + 5, y +(m * space) + 5,string(menu[m]), c_black, c_black, c_black, c_black, 0.4);
-    draw_text_colour(x + space, y +(m * space),string(menu[m]), c_aqua, c_aqua, c_white, c_white, 1);
-    
+    draw_text_colour(x + space, y +(m * space),string(menu[m]), c_black, c_black, c_black, c_black, TextAlpha);
 }
 
-draw_sprite(sprite_index, image_index, x + 16, y + mpos * space);
+draw_sprite_ext(sprite_index, image_index, x + 16, y + mpos * space, 1, 1, 0, c_white, TextAlpha);
+
+draw_sprite_ext(spr_mother_menu,    0,      MotherX,     MotherY,       0.5,        0.5,        0,        c_white, 1);
+draw_sprite_ext(spr_mist_menu,      0,      MistX,       MistY,         0.6,        0.6,        0,        c_white, 1);
+draw_sprite_ext(spr_mountain_menu,  0,      MountainX,   MountainY,     0.5,        0.5,        0,        c_white, 1);
+draw_sprite_ext(spr_menu_text,      0,      MenuX,       MenuY,         0.5,        0.5,        0,        c_white, 1);
 </string>
           </argument>
         </arguments>
