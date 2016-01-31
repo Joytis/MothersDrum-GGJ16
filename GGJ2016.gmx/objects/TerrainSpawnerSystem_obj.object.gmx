@@ -27,70 +27,76 @@
             <kind>1</kind>
             <string>///Initization script
 
+//--------------
+//Road Spawners
+//==============
+
+
+
 //------------------
 //Essential Spawners
 //------------------
 //Terrain spawner is created in the TorchSpawnerSystem!
 LTreeSpawner1 = instance_create(x, y, TreelineSpawner_obj);
 RTreeSpawner1 = instance_create(x, y, TreelineSpawner_obj);
-LTreeSpawner1.DEPTH = 1;
-RTreeSpawner1.DEPTH = 1;
+LTreeSpawner1.DEPTH = 5;
+RTreeSpawner1.DEPTH = 5;
 LTreeSpawner1.angle = -50;
 LTreeSpawner1.tox *= -1;
 RTreeSpawner1.angle = 50;
 //60
 LTreeSpawner5 = instance_create(x, y, TreelineSpawner_obj);
 RTreeSpawner5 = instance_create(x, y, TreelineSpawner_obj);
-LTreeSpawner5.DEPTH = 2;
-RTreeSpawner5.DEPTH = 2;
+LTreeSpawner5.DEPTH = 6;
+RTreeSpawner5.DEPTH = 6;
 LTreeSpawner5.angle = -60;
 LTreeSpawner5.tox *= -1;
 RTreeSpawner5.angle = 60;
 //Halfway Spawner 70
 LTreeSpawner2 = instance_create(x, y, TreelineSpawner_obj);
 RTreeSpawner2 = instance_create(x, y, TreelineSpawner_obj);
-LTreeSpawner2.DEPTH = 3;
-RTreeSpawner2.DEPTH = 3;
+LTreeSpawner2.DEPTH = 7;
+RTreeSpawner2.DEPTH = 7;
 LTreeSpawner2.angle = -70;
 LTreeSpawner2.tox *= -1;
 RTreeSpawner2.angle = 70;
 //75
 LTreeSpawner6 = instance_create(x, y, TreelineSpawner_obj);
 RTreeSpawner6 = instance_create(x, y, TreelineSpawner_obj);
-LTreeSpawner6.DEPTH = 4;
-RTreeSpawner6.DEPTH = 4;
+LTreeSpawner6.DEPTH = 8;
+RTreeSpawner6.DEPTH = 8;
 LTreeSpawner6.angle = -75;
 LTreeSpawner6.tox *= -1;
 RTreeSpawner6.angle = 75;
 //80
 LTreeSpawner4 = instance_create(x, y, TerrainSpawner_obj);
 RTreeSpawner4 = instance_create(x, y, TerrainSpawner_obj);
-LTreeSpawner4.DEPTH = 5;
-RTreeSpawner4.DEPTH = 5;
+LTreeSpawner4.DEPTH = 9;
+RTreeSpawner4.DEPTH = 9;
 LTreeSpawner4.angle = -80;
 LTreeSpawner4.tox *= -1;
 RTreeSpawner4.angle = 80;
 //Edge spawner 85
 LTreeSpawner3 = instance_create(x, y, TerrainSpawner_obj);
 RTreeSpawner3 = instance_create(x, y, TerrainSpawner_obj);
-LTreeSpawner3.DEPTH = 6;
-RTreeSpawner3.DEPTH = 6;
+LTreeSpawner3.DEPTH = 10;
+RTreeSpawner3.DEPTH = 10;
 LTreeSpawner3.angle = -85;
 LTreeSpawner3.tox *= -1;
 RTreeSpawner3.angle = 85;
 //87
 LTreeSpawner8 = instance_create(x, y, TerrainSpawner_obj);
 RTreeSpawner8 = instance_create(x, y, TerrainSpawner_obj);
-LTreeSpawner8.DEPTH = 8;
-RTreeSpawner8.DEPTH = 8;
+LTreeSpawner8.DEPTH = 11;
+RTreeSpawner8.DEPTH = 11;
 LTreeSpawner8.angle = -87;
 LTreeSpawner8.tox *= -1;
 RTreeSpawner8.angle = 87;
 //88
 LTreeSpawner7 = instance_create(x, y, TerrainSpawner_obj);
 RTreeSpawner7 = instance_create(x, y, TerrainSpawner_obj);
-LTreeSpawner7.DEPTH = 7;
-RTreeSpawner7.DEPTH = 7;
+LTreeSpawner7.DEPTH = 12;
+RTreeSpawner7.DEPTH = 12;
 LTreeSpawner7.angle = -88;
 LTreeSpawner7.tox *= -1;
 RTreeSpawner7.angle = 88;
