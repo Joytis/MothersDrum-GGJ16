@@ -36,6 +36,8 @@
       <sprite>sprites\Shrub4_spr</sprite>
       <sprite>sprites\Shrub3_spr</sprite>
     </sprites>
+    <sprite>sprites\spooky</sprite>
+    <sprite>sprites\torch2_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -43,6 +45,7 @@
     <background>background\TorchBackground3_bkg</background>
     <background>background\TorchBackground4_bkg</background>
     <background>background\you_lose</background>
+    <background>background\you_win</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -63,13 +66,13 @@
       <object>objects\TreelineSpawner_obj</object>
       <object>objects\Tree1_obj</object>
       <object>objects\Tree2_obj</object>
-      <object>objects\Bush1_obj</object>
       <objects name="shrubs">
         <object>objects\Shrub1_obj</object>
         <object>objects\Shrub2_obj</object>
         <object>objects\Shrub3_obj</object>
         <object>objects\Shrub4_obj</object>
       </objects>
+      <object>objects\RoadSpawner_obj</object>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
@@ -91,6 +94,7 @@
     <room>rooms\friends_test_rm</room>
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
+    <room>rooms\win_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

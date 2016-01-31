@@ -29,10 +29,10 @@
 
 cps = 60 //Cycles per second
 
-bpm = 120;
+bpm = 240;
 bps = bpm/60;
 
-cpb = cps / bps; //Cycles per beat
+cpb = 15; //Cycles per beat
 
 Lindex = 0;
 Ldelay = 0;
