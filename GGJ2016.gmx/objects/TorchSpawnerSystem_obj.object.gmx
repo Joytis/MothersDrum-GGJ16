@@ -29,7 +29,10 @@
 
 //MOUNTAIN
 mount = instance_create(512, 200, mount_obj);
-mom = instance_create(675, 200, mom_obj);
+mom = instance_create(512, 170, mom_obj);
+
+signSpawned = false;
+winstatenum = 0;
 
 //------------------------
 // Private helper members
@@ -39,7 +42,7 @@ XTorchOffset = 210;
 YTorchOffset = 334;
 
 XBBOffset = 480;
-YBBOffset = 600;
+YBBOffset = 640;
 
 //Set position to x = 384  y = 0
 x = 512;
@@ -58,6 +61,11 @@ TorchBeatBox = instance_create(x, y + YBBOffset, TorchBeatBox_obj);
 
 //TERRAIN SPAWNER INIT
 TSpawner = instance_create(x, y, TerrainSpawnerSystem_obj);
+
+//Sign spawner
+SSpawner = instance_create(x + XTorchOffset, y, SignSpawnSystem_obj);
+SSpawner.angle = 35;
+SSpawner.DEPTH = 1;
 
 //----------------------------
 //Beatmap Member Variables
@@ -230,8 +238,14 @@ if(Rdelay &gt; ridex)
 {
     Rdelay = 0;
     Rindex += 1;
+    signSpawned = false;
     if(Rindex &gt;= array_length_1d(RStream))
     {
+        winstatenum += 1;
+        if(winstatenum &gt;= 600)
+        {
+            global.has_won = true;
+        }
     }
     else
     {
@@ -246,19 +260,47 @@ else
 
 switch(Rindex)
 {
-    case 11:
+    case 12:
     {
-        background_index[0] = TorchBackground2_bkg;
+        if(signSpawned == false)
+        {
+            SSpawner.spawnTree = true;
+            signSpawned = true;   
+        }
+        SSpawner.idex = 0;   
     }
-    break
+    break;
     case 24:
     {
-        background_index[0] = TorchBackground3_bkg; 
+        background_index[0] = TorchBackground2_bkg;
+        if(signSpawned == false)
+        {
+            SSpawner.spawnTree = true;
+            signSpawned = true;   
+        }
+        SSpawner.idex = 1;
     }
     break
-    case 38:
+    case 35:
+    {
+        background_index[0] = TorchBackground3_bkg; 
+        if(signSpawned == false)
+        {
+            SSpawner.spawnTree = true;
+            signSpawned = true;   
+        }
+        SSpawner.idex = 2;
+    }
+    break
+    case 47:
     {
         background_index[0] = TorchBackground4_bkg;
+        if(signSpawned == false)
+        {
+            SSpawner.spawnTree = true;
+            signSpawned = true;   
+        }
+        SSpawner.idex = 3;
     }
     break
     default:

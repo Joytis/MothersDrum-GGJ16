@@ -39,6 +39,7 @@
       <sprite>sprites\Tree1_spr</sprite>
       <sprite>sprites\tree_test_obj</sprite>
       <sprite>sprites\Tree2_spr</sprite>
+      <sprite>sprites\Tree3_spr</sprite>
     </sprites>
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sprite6</sprite>
@@ -72,6 +73,12 @@
     <sprite>sprites\mom_spr</sprite>
     <sprite>sprites\spr_drum</sprite>
     <sprite>sprites\spr_mallet</sprite>
+    <sprites name="signs">
+      <sprite>sprites\sign1_spr</sprite>
+      <sprite>sprites\sign2_spr</sprite>
+      <sprite>sprites\sign3_spr</sprite>
+      <sprite>sprites\sign4_spr</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -104,6 +111,7 @@
       <object>objects\RoadSpawner_obj</object>
       <object>objects\Tree1_obj</object>
       <object>objects\Tree2_obj</object>
+      <object>objects\Tree3_obj</object>
       <objects name="shrubs">
         <object>objects\Shrub1_obj</object>
         <object>objects\Shrub2_obj</object>
@@ -124,6 +132,7 @@
       <object>objects\TorchSpawnerSystem_obj</object>
       <object>objects\BeatMap_obj</object>
       <object>objects\TorchBeatBox_obj</object>
+      <object>objects\SignSpawnSystem_obj</object>
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
@@ -135,6 +144,12 @@
     <object>objects\obj_bgsound_controller</object>
     <object>objects\obj_win_room</object>
     <object>objects\obj_mainDrum</object>
+    <objects name="sign">
+      <object>objects\sign1_obj</object>
+      <object>objects\sign2_obj</object>
+      <object>objects\sign3_obj</object>
+      <object>objects\sign4_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu_rm</room>
