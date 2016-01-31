@@ -44,14 +44,12 @@
     </sprites>
     <sprite>sprites\spooky</sprite>
     <sprite>sprites\torch2_spr</sprite>
-<<<<<<< HEAD
     <sprites name="menu">
       <sprite>sprites\spr_mother_menu</sprite>
       <sprite>sprites\spr_mountain_menu</sprite>
       <sprite>sprites\spr_mist_menu</sprite>
       <sprite>sprites\spr_menu_text</sprite>
     </sprites>
-=======
     <sprites name="debris">
       <sprite>sprites\deb1_spr</sprite>
       <sprite>sprites\deb2_spr</sprite>
@@ -61,7 +59,6 @@
     </sprites>
     <sprite>sprites\mount_spr</sprite>
     <sprite>sprites\mom_spr</sprite>
->>>>>>> 0e8e78a97bcec0dc601feb93ad1cfe9195f7a933
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
