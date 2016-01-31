@@ -109,9 +109,30 @@ if (keyboard_check_pressed(vk_enter)){
 
 if (StartSelect) selectLag--;
 
-if(selectLag == 0)
+if(selectLag &lt;= 0)
 {
-    scr_menu();
+    switch (mpos)
+    {
+        case 0:
+         {
+             audio_stop_all();
+             room_goto(TorchTestRoom_rm);
+             break;
+         }
+        case 1: 
+        {
+             audio_stop_all();
+             room_goto(CORDITS_rm);
+             break;
+         }
+        case 2:
+        {
+             audio_stop_all();
+             game_end();
+             break;
+        }
+        default: break;
+    }   
 }
 </string>
           </argument>
@@ -157,6 +178,7 @@ draw_sprite_ext(spr_mother_menu,    0,      MotherX,     MotherY,       0.5,    
 draw_sprite_ext(spr_mist_menu,      0,      MistX,       MistY,         0.6,        0.6,        0,        c_white, 1);
 draw_sprite_ext(spr_mountain_menu,  0,      MountainX,   MountainY,     0.5,        0.5,        0,        c_white, 1);
 draw_sprite_ext(spr_menu_text,      0,      MenuX,       MenuY,         0.5,        0.5,        0,        c_white, 1);
+
 </string>
           </argument>
         </arguments>

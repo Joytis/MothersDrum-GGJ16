@@ -69,21 +69,22 @@ if(x &gt; room_width + 300 || y &gt; room_height + 300)
 {
     if(sprindx == 1)
     {
-        global.life_state -= 1;
+        global.life_state_sub = true;
     }
     instance_destroy();
 }
 
-   if (keyboard_check_pressed(ord("Z")))
-   {
+if (keyboard_check_pressed(ord("Z")))
+{
         left = true;
         Hit = true;
-   }
-   if (keyboard_check_pressed(ord("X")))
-    {
+}
+
+if (keyboard_check_pressed(ord("X")))
+{
         right = true;
         Hit = true;
-    }
+}
 
 if(Hit){
     drumTrigger--;
@@ -91,26 +92,47 @@ if(Hit){
 
 if(drumTrigger == 0){
 
+//SPAM CHECKING?
+if(right &amp;&amp; !place_meeting(x,y,TBB2_obj))
+{
+    global.life_state_sub = true;
+    right = false;
+}   
+
+if(left &amp;&amp; !place_meeting(x,y,TorchBeatBox_obj))
+{
+    global.life_state_sub = true;
+    left = false;
+} 
+
 if(place_meeting(x,y,TorchBeatBox_obj)){
 
-    if(!audio_is_playing(snd_light_torch)){
-        audio_play_sound(snd_light_torch, 12, false);
-    }
+    //if(!audio_is_playing(snd_light_torch)){
+    //    audio_play_sound(snd_light_torch, 12, false);
+    //}
     if(left &amp;&amp; sprindx != 0 &amp;&amp; SCALE &lt; 0)
     {
         sprindx = 0;
     }
+    global.life_state_null = true;
     
+}
+if(place_meeting(x,y,TBB2_obj)){
+    //if(!audio_is_playing(snd_light_torch)){
+    //    audio_play_sound(snd_light_torch, 12, false);
+    //}
     if(right &amp;&amp; SCALE &gt; 0)
     {
         sprindx = 0;
     }
-    
+    global.life_state_null = true;
 }
 
+  
+
     snd = choose(snd_drum_2, snd_drum_3, snd_drum_4, snd_drum_5, snd_drum_6);
-    audio_sound_gain(snd, 0.7, 0);
-    audio_play_sound(snd, 12, false);
+    audio_sound_gain(snd, 0.05, 0);
+    audio_play_sound(snd, 3, false);
     Hit = !Hit;
     right = !right;
     left = !left;

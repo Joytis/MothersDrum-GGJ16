@@ -57,7 +57,8 @@ RTorchSpawner.DEPTH = 0;
 LTorchSpawner.angle = -35;
 RTorchSpawner.angle = 35;
 
-TorchBeatBox = instance_create(x, y + YBBOffset, TorchBeatBox_obj);
+TorchBeatBox = instance_create(x - 256, y + YBBOffset, TorchBeatBox_obj);
+TorchBeatBox2 = instance_create(x + 256, y + YBBOffset, TBB2_obj);
 
 //TERRAIN SPAWNER INIT
 TSpawner = instance_create(x, y, TerrainSpawnerSystem_obj);
@@ -89,7 +90,7 @@ Rindex = 0;
 Rdelay = 0;
 
 //IN BEATS
-LStream[0] = 0;
+LStream[0] = 16;
 LStream[1] = 16;
 LStream[2] = 16;
 LStream[3] = 16;
@@ -136,7 +137,7 @@ LStream[44] = 16;
 LStream[45] = 2;
 LStream[46] = 2; //
 
-RStream[0] = 64;
+RStream[0] = 80;
 RStream[1] = 16;
 RStream[2] = 16;
 RStream[3] = 16;

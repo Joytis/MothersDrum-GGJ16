@@ -53,6 +53,7 @@
       <sprite>sprites\Shrub2_spr</sprite>
       <sprite>sprites\Shrub4_spr</sprite>
       <sprite>sprites\Shrub3_spr</sprite>
+      <sprite>sprites\Shrub5_spr</sprite>
     </sprites>
     <sprite>sprites\spooky</sprite>
     <sprite>sprites\torch2_spr</sprite>
@@ -79,6 +80,8 @@
       <sprite>sprites\sign3_spr</sprite>
       <sprite>sprites\sign4_spr</sprite>
     </sprites>
+    <sprite>sprites\credits_spr</sprite>
+    <sprite>sprites\pressescape_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -118,6 +121,7 @@
         <object>objects\Shrub2_obj</object>
         <object>objects\Shrub3_obj</object>
         <object>objects\Shrub4_obj</object>
+        <object>objects\Shrub5_obj</object>
       </objects>
       <objects name="debris">
         <object>objects\deb1_obj</object>
@@ -134,6 +138,7 @@
       <object>objects\BeatMap_obj</object>
       <object>objects\TorchBeatBox_obj</object>
       <object>objects\SignSpawnSystem_obj</object>
+      <object>objects\TBB2_obj</object>
     </objects>
     <object>objects\perspective_parent_obj</object>
     <object>objects\perspective_test_obj</object>
@@ -151,6 +156,9 @@
       <object>objects\sign3_obj</object>
       <object>objects\sign4_obj</object>
     </objects>
+    <object>objects\credits_obj</object>
+    <object>objects\esc_obj</object>
+    <object>objects\lose_handler_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu_rm</room>
@@ -159,6 +167,7 @@
     <room>rooms\perspective_test_rm</room>
     <room>rooms\lose_rm</room>
     <room>rooms\win_rm</room>
+    <room>rooms\CORDITS_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

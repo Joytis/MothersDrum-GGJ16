@@ -38,6 +38,8 @@ global.has_lost = false;
 
 // Initializes life to three
 global.life_state = 3;
+global.life_state_sub = false;
+global.life_state_null = false;
 
 //Global variable for origin
 global.OX = 512;
@@ -45,7 +47,7 @@ global.OY = 200;
 global.HOZ = 400;
 global.tScale = 4;
 
-global.PSpeed = 5;
+global.PSpeed = 4;
 
 //Friends tracking
 global.spiritGrab = 0;
@@ -202,6 +204,20 @@ tmp.SCALE *= -1;
     }
     room_goto(you_win);
 }
+
+if(global.life_state_sub)
+{
+    if(global.life_state_null == true)
+    {
+        
+    }
+    else{
+        global.life_state--;
+    }
+    global.life_state_null = false;
+    global.life_state_sub = false;
+}
+
 </string>
           </argument>
         </arguments>
