@@ -81,7 +81,8 @@ audio_sound_gain(snd_bush_1,            0.4,    0);
 footstepTrigger--;
 
 if(footstepTrigger ==0){
-    snd = choose(/*footsteps here*/);
+    snd = snd_footsteps_1; //choose(snd_footsteps_1, snd_footsteps_2, snd_footsteps_3, snd_footsteps_4);
+    audio_sound_gain(snd, random_range(0.4, 0.8), 0);
     audio_play_sound(snd, 13 , false);
     footstepTrigger = 32;
 }
