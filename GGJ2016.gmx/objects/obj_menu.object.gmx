@@ -32,10 +32,12 @@ menu[1] = "Credits";
 menu[2] = "Quit";
 DropAlpha = 0;
 TextAlpha = 0;
+angle = -1;
 
 audio_play_sound(snd_menu_music, 10, true);
+selectLag = 12;
 
-space = 65;
+space = 45;
 mpos = 0;
 
 MotherX     =   0;
@@ -46,6 +48,8 @@ MountainX   =   room_width;
 MountainY   =   room_height;
 MenuX       =   0;
 MenuY       =   room_height/2 - 100;
+
+StartSelect = false;
 </string>
           </argument>
         </arguments>
@@ -79,9 +83,6 @@ if (move != 0)
     if (mpos &gt; array_length_1d(menu) -1) mpos = 0;
 }
 
-if (keyboard_check_pressed(vk_enter)) scr_menu();
-
-
 if(MotherX &lt; room_width/2 + 250)
 {
     MotherX +=      4;
@@ -102,6 +103,16 @@ if(MenuX &lt; room_width/2 - 200)
     MenuX += 2;
 }
 
+if (keyboard_check_pressed(vk_enter)){
+    StartSelect = true;
+}
+
+if (StartSelect) selectLag--;
+
+if(selectLag == 0)
+{
+    scr_menu();
+}
 </string>
           </argument>
         </arguments>
@@ -135,8 +146,12 @@ for (m =0; m &lt; array_length_1d(menu); m += 1)
 {
     draw_text_colour(x + space, y +(m * space),string(menu[m]), c_black, c_black, c_black, c_black, TextAlpha);
 }
+if(StartSelect)
+{
+    angle -= 5;
+}
 
-draw_sprite_ext(sprite_index, image_index, x + 16, y + mpos * space, 1, 1, 0, c_white, TextAlpha);
+draw_sprite_ext(sprite_index, image_index, x + 16, y + mpos * space, 0.3, 0.3, angle, c_white, TextAlpha);
 
 draw_sprite_ext(spr_mother_menu,    0,      MotherX,     MotherY,       0.5,        0.5,        0,        c_white, 1);
 draw_sprite_ext(spr_mist_menu,      0,      MistX,       MistY,         0.6,        0.6,        0,        c_white, 1);
