@@ -67,6 +67,10 @@ else if(global.life_state == 2)
             global.spiritGrab = 20;
         }
         draw_sprite_ext(spooky,image_index,590-(5*global.spiritGrab), 400,1,1,image_angle,c_white,1);
+        if(!audio_is_playing(spooky_sound))
+        {
+            audio_play_sound(spooky_sound,10,false);
+        }
     }
     draw_sprite_ext(sprite4,image_index,255,250,0.6,0.6,image_angle,c_white,1);
 }
@@ -83,6 +87,10 @@ else if(global.life_state == 1)
             global.spiritGrab = 40;
         }
         draw_sprite_ext(spooky,image_index,90+(5*global.spiritGrab), 400,1,1,image_angle,c_white,1);
+        if(!audio_is_playing(spooky_sound))
+        {
+            audio_play_sound(spooky_sound,10,false);
+        }
     }
 }
 else
