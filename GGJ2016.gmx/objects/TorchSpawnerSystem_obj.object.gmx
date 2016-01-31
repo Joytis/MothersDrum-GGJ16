@@ -29,7 +29,7 @@
 
 //MOUNTAIN
 mount = instance_create(512, 200, mount_obj);
-mom = instance_create(6500, 200, mom_obj);
+mom = instance_create(675, 200, mom_obj);
 
 //------------------------
 // Private helper members
@@ -102,80 +102,39 @@ LStream[17] = 40;
 LStream[18] = 32;
 LStream[19] = 8;
 LStream[20] = 8;
-LStream[21] = 12;
-LStream[22] = 4;
+LStream[21] = 16;
+LStream[22] = 8;
 LStream[23] = 8;
-LStream[24] = 8;
-LStream[25] = 24;
-LStream[26] = 4; //22
-LStream[27] = 32;
-LStream[28] = 8;
-LStream[29] = 4;
-LStream[30] = 1;
-LStream[31] = 6;
-LStream[32] = 4;
+LStream[24] = 12;
+LStream[25] = 4;//22
+LStream[27] = 40;
+LStream[28] = 16;
+LStream[29] = 8;
+LStream[30] = 8;
+LStream[31] = 8;
+LStream[32] = 16;
 LStream[33] = 8;
-LStream[34] = 8; //33
-LStream[35] = 4;
+LStream[34] = 20;
+LStream[35] = 12; //33
 LStream[36] = 8;
-LStream[37] = 2;
-LStream[38] = 6;
-LStream[39] = 4;
-LStream[40] = 6;
-LStream[41] = 4;
-LStream[42] = 2;
-LStream[43] = 2;
-LStream[44] = 8;
+LStream[37] = 8;
+LStream[38] = 8;
+LStream[39] = 8;
+LStream[40] = 8;
+LStream[41] = 8;
+LStream[42] = 8;
+LStream[43] = 40;
+LStream[44] = 16;
 LStream[45] = 2;
-LStream[46] = 6;
-LStream[47] = 2;
-LStream[48] = 6;
-LStream[49] = 8; //37
-LStream[50] = 4;
-LStream[51] = 4;
-LStream[52] = 4;
-LStream[53] = 4;
-LStream[54] = 4;
-LStream[55] = 4;
-LStream[56] = 4;
-LStream[57] = 4;
-LStream[58] = 4;
-LStream[59] = 4;
-LStream[60] = 4;
-LStream[61] = 4;
-LStream[62] = 4;
-LStream[63] = 4;
-LStream[64] = 4;
-LStream[65] = 4;
-LStream[66] = 4;
-LStream[67] = 4;
-LStream[68] = 4;
-LStream[69] = 4;
-LStream[70] = 4;
-LStream[71] = 1;
-LStream[72] = 11;
-LStream[73] = 4;
-LStream[74] = 1;
-LStream[75] = 11;
-LStream[76] = 16;
-LStream[77] = 2;
-LStream[78] = 2;
-LStream[79] = 1;
-LStream[80] = 1;
-LStream[81] = 2;
-LStream[82] = 2;
-LStream[83] = 2;
-LStream[84] = 1;
-LStream[85] = 1;
-LStream[86] = 2;
+LStream[46] = 2; //
 
 RStream[0] = 64;
 RStream[1] = 16;
 RStream[2] = 16;
 RStream[3] = 16;
 RStream[4] = 88; //12
-RStream[5] = 4;
-RStream[6] = 14;
+RStream[5] = 8;
+RStream[6] = 16;
 RStream[7] = 8; //15.5
 RStream[8] = 32;
 RStream[9] = 8;
@@ -193,57 +152,30 @@ RStream[20] = 4;
 RStream[21] = 28;
 RStream[22] = 4;
 RStream[23] = 8;
-RStream[24] = 4;
-RStream[25] = 2;
-RStream[26] = 2;
-RStream[27] = 4;
-RStream[28] = 8;
-RStream[29] = 32;
-RStream[30] = 24;
-RStream[31] = 8; //34.25
-RStream[32] = 16;
+RStream[24] = 8;
+RStream[25] = 4;
+RStream[26] = 4;
+RStream[27] = 16;
+RStream[28] = 24;
+RStream[29] = 20;
+RStream[30] = 8;
+RStream[31] = 16; //34.25
+RStream[32] = 8;
 RStream[33] = 8;
-RStream[34] = 8;
-RStream[35] = 12; //37
-RStream[36] = 4;
-RStream[37] = 4;
-RStream[38] = 4;
-RStream[39] = 6;
-RStream[40] = 4;
-RStream[41] = 4;
-RStream[42] = 4;
-RStream[43] = 2;
-RStream[44] = 4;
-RStream[45] = 4;
-RStream[46] = 4;
-RStream[47] = 6;
-RStream[48] = 4;
-RStream[49] = 4;
-RStream[50] = 4;
-RStream[51] = 2;
-RStream[52] = 4;
-RStream[53] = 4;
-RStream[54] = 4;
-RStream[55] = 12;
-RStream[56] = 2;
-RStream[57] = 2;
-RStream[58] = 1;
-RStream[59] = 11;
-RStream[60] = 2;
-RStream[61] = 2;
-RStream[62] = 1;
-RStream[63] = 3;
-RStream[64] = 16;
-RStream[65] = 2;
-RStream[66] = 2;
-RStream[67] = 1;
-RStream[68] = 1;
-RStream[69] = 2;
-RStream[70] = 2;
-RStream[71] = 2;
-RStream[72] = 1;
-RStream[73] = 1;
-RStream[74] = 2;
+RStream[34] = 12;
+RStream[35] = 8; //37
+RStream[36] = 8;
+RStream[37] = 8;
+RStream[38] = 8;
+RStream[39] = 8;
+RStream[40] = 8;
+RStream[41] = 8;
+RStream[42] = 8;
+RStream[43] = 8;
+RStream[44] = 24;
+RStream[45] = 16;
+RStream[46] = 2;
+RStream[47] = 2;
 
 lidex = (LStream[0] * cpb)
 ridex = (RStream[0] * cpb)
@@ -311,6 +243,27 @@ else
 {
     Rdelay += 1;
 }
+
+switch(Rindex)
+{
+    case 11:
+    {
+        background_index[0] = TorchBackground2_bkg;
+    }
+    break
+    case 24:
+    {
+        background_index[0] = TorchBackground3_bkg; 
+    }
+    break
+    case 38:
+    {
+        background_index[0] = TorchBackground4_bkg;
+    }
+    break
+    default:
+}
+
 </string>
           </argument>
         </arguments>
