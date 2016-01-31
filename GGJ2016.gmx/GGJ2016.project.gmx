@@ -26,6 +26,7 @@
       <sprite>sprites\Shrub3_spr</sprite>
     </sprites>
     <sprite>sprites\spooky</sprite>
+    <sprite>sprites\torch2_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -60,6 +61,7 @@
         <object>objects\Shrub3_obj</object>
         <object>objects\Shrub4_obj</object>
       </objects>
+      <object>objects\RoadSpawner_obj</object>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
