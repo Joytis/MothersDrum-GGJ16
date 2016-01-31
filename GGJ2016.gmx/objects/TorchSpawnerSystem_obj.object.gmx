@@ -27,6 +27,10 @@
             <kind>1</kind>
             <string>/// Initization Script
 
+//MOUNTAIN
+mount = instance_create(512, 200, mount_obj);
+mom = instance_create(6500, 200, mom_obj);
+
 //------------------------
 // Private helper members
 //------------------------
