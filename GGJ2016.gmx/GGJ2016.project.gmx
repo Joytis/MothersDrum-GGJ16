@@ -100,6 +100,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_menu</font>
+    <font>fonts\fnt_hammer</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_menu</object>

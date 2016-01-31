@@ -33,6 +33,14 @@ playRightAnimation = false;
 drumTrigger2 = 10;
 drumTrigger3 = 10;
 drumTrigger4 = 10;
+
+drumOffsetX = 0;
+drumOffsetY = 0;
+angleDrum = 0;
+
+turnLeft = false;
+goUp = false;
+goRight = false;
 </string>
           </argument>
         </arguments>
@@ -94,6 +102,42 @@ if(playRightAnimation){
         }  
     }
 }
+
+if(!turnLeft){
+angleDrum = angleDrum + 0.5;
+}else{
+angleDrum = angleDrum - 0.5;
+}
+
+/*if(!goUp){
+drumOffsetY -= 2
+}else{
+drumOffsetY += 2
+}
+
+if(!goRight){
+drumOffsetX -= 2
+}else{
+drumOffsetX += 2
+}*/
+
+if (angleDrum &gt; 8){
+    turnLeft = true;
+}else if (angleDrum &lt; -8){
+    turnLeft = false;
+}
+
+/*if (drumOffsetX &gt; 30){
+    goRight = true;
+}else if (drumOffsetX &lt; -30){
+    goRight = false;
+}
+
+if (drumOffsetY &gt; 30){
+    goUp = true;
+}else if (drumOffsetY &lt; -30){
+    goUp = false;
+}
 </string>
           </argument>
         </arguments>
@@ -116,9 +160,15 @@ if(playRightAnimation){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-draw_sprite_ext(spr_mallet, 0, x - 400, y - 300, 0.3, 0.3, angleLEFT, c_white, 1);
-draw_sprite_ext(spr_mallet, 0, x + 400, y - 300, -0.3, 0.3, angleRIGHT, c_white, 1);
+            <string>draw_set_font(fnt_hammer);
+
+draw_sprite_ext(spr_drum, 0, x + drumOffsetX, y + drumOffsetY, 1, 1, angleDrum, c_white, 1);
+
+draw_sprite_ext(spr_mallet, 0, x - 200, y - 200, 0.3, 0.3, angleLEFT, c_white, 1);
+draw_text_colour(x - 300, y - 100,"Z", c_black, c_black, c_black, c_black, 0.8);
+
+draw_sprite_ext(spr_mallet, 0, x + 200, y - 200, -0.3, 0.3, angleRIGHT, c_white, 1);
+draw_text_colour(x + 300, y - 100,"X", c_black, c_black, c_black, c_black, 0.8);
 </string>
           </argument>
         </arguments>
