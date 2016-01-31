@@ -75,7 +75,15 @@ global.spiritGrab = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if(global.has_won)
+{
+    if(audio_is_playing(snd_footsteps_1)
+    {
+        audio_stop_sound(snd_footsteps_1);
+    }
+    room_goto(you_win);
+}
+</string>
           </argument>
         </arguments>
       </action>
