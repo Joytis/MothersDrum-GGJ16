@@ -21,6 +21,7 @@
     <sound>sound\snd_footsteps_3</sound>
     <sound>sound\snd_footsteps_4</sound>
     <sound>sound\snd_menu_music</sound>
+    <sound>sound\snd_you_win</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
@@ -123,6 +124,7 @@
     <object>objects\mount_obj</object>
     <object>objects\mom_obj</object>
     <object>objects\obj_bgsound_controller</object>
+    <object>objects\obj_win_room</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu_rm</room>
