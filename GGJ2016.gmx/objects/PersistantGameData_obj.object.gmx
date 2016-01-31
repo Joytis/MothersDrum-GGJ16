@@ -196,10 +196,6 @@ tmp.SCALE *= -1;
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-            <string></string>
-=======
->>>>>>> f2475856ed077ce6d65ab4945433c0b9dbc461c6
             <string>if(global.has_won)
 {
     if(audio_is_playing(snd_footsteps_1))
