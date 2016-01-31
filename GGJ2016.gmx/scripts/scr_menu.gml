@@ -2,7 +2,8 @@ switch (mpos)
 {
     case 0:
         {
-            //DoStuff
+            audio_stop_all();
+            room_goto(TorchTestRoom_rm);
             break;
         }
     case 1: 
@@ -12,7 +13,8 @@ switch (mpos)
         }
     case 2:
         {
-            //DoStuff
+            audio_stop_all();
+            game_end();
             break;
         }
     default: break;
