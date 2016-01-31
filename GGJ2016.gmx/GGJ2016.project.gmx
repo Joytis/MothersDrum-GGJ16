@@ -31,6 +31,9 @@
       <sprite>sprites\tree_test_obj</sprite>
       <sprite>sprites\Tree2_spr</sprite>
     </sprites>
+    <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\sprite6</sprite>
+    <sprite>sprites\sprite7</sprite>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\torch_spr</sprite>
     <sprite>sprites\sprite8</sprite>
