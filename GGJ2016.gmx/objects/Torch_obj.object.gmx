@@ -92,6 +92,9 @@ if(x &gt; room_width + 300 || y &gt; room_height + 300)
             <kind>1</kind>
             <string>if(keyboard_check_pressed(ord("Z")))
 {
+    if(!audio_is_playing(snd_light_torch)){
+        audio_play_sound(snd_light_torch, 12, false);
+    }
     if(sprindx == 0)
     {
         
@@ -109,6 +112,9 @@ if(keyboard_check_pressed(ord("X")))
 {
     if(SCALE &gt; 0)
     {
+        if(!audio_is_playing(snd_light_torch)){
+            audio_play_sound(snd_light_torch, 12, false);
+        }
         sprindx = 0;
     }
 }
