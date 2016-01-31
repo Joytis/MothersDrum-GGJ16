@@ -243,6 +243,27 @@ else
 {
     Rdelay += 1;
 }
+
+switch(Rindex)
+{
+    case 11:
+    {
+        background_index[0] = TorchBackground2_bkg;
+    }
+    break
+    case 24:
+    {
+        background_index[0] = TorchBackground3_bkg; 
+    }
+    break
+    case 38:
+    {
+        background_index[0] = TorchBackground4_bkg;
+    }
+    break
+    default:
+}
+
 </string>
           </argument>
         </arguments>
