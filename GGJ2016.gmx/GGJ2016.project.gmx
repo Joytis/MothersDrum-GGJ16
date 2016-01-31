@@ -5,7 +5,20 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+<<<<<<< HEAD
     <sound>sound\spooky_sound</sound>
+=======
+    <sound>sound\snd_bg_ambient_loop</sound>
+    <sound>sound\snd_ambient_winds</sound>
+    <sound>sound\snd_fire_glowing</sound>
+    <sound>sound\snd_fire_crackle</sound>
+    <sound>sound\snd_crow_1</sound>
+    <sound>sound\snd_crow_2</sound>
+    <sound>sound\snd_bird_1</sound>
+    <sound>sound\snd_bush_1</sound>
+    <sound>sound\snd_bush_2</sound>
+    <sound>sound\snd_light_torch</sound>
+>>>>>>> fe87cae9b73b3eea4392761ea0a1f5b24763d111
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
@@ -28,6 +41,7 @@
       <sprite>sprites\Shrub3_spr</sprite>
     </sprites>
     <sprite>sprites\spooky</sprite>
+    <sprite>sprites\torch2_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\TorchBackground_bkg</background>
@@ -62,6 +76,7 @@
         <object>objects\Shrub3_obj</object>
         <object>objects\Shrub4_obj</object>
       </objects>
+      <object>objects\RoadSpawner_obj</object>
     </objects>
     <objects name="TorchSystem">
       <object>objects\TorchSpawnerNode_obj</object>
@@ -76,6 +91,7 @@
     <object>objects\friend_controller_obj</object>
     <object>objects\object15</object>
     <object>objects\spirited_away_obj</object>
+    <object>objects\obj_bgsound_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TorchTestRoom_rm</room>
