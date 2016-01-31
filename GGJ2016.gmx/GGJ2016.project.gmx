@@ -16,6 +16,10 @@
     <sound>sound\snd_bush_1</sound>
     <sound>sound\snd_bush_2</sound>
     <sound>sound\snd_light_torch</sound>
+    <sound>sound\snd_footsteps_1</sound>
+    <sound>sound\snd_footsteps_2</sound>
+    <sound>sound\snd_footsteps_3</sound>
+    <sound>sound\snd_footsteps_4</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
