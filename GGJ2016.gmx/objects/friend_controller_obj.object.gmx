@@ -25,11 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check_pressed(vk_lcontrol))
-{
-    global.life_state--;
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -89,7 +85,7 @@ else if(global.life_state == 1)
         draw_sprite_ext(spooky,image_index,90+(5*global.spiritGrab), 400,1,1,image_angle,c_white,1);
         if(!audio_is_playing(spooky_sound))
         {
-            audio_play_sound(spooky_sound,10,false);
+           audio_play_sound(spooky_sound,10,false);
         }
     }
 }

@@ -5,9 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-<<<<<<< HEAD
     <sound>sound\spooky_sound</sound>
-=======
     <sound>sound\snd_bg_ambient_loop</sound>
     <sound>sound\snd_ambient_winds</sound>
     <sound>sound\snd_fire_glowing</sound>
@@ -18,7 +16,6 @@
     <sound>sound\snd_bush_1</sound>
     <sound>sound\snd_bush_2</sound>
     <sound>sound\snd_light_torch</sound>
->>>>>>> fe87cae9b73b3eea4392761ea0a1f5b24763d111
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_menu</sprite>
