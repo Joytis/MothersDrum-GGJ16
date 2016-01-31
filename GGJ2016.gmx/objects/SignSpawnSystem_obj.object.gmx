@@ -65,7 +65,7 @@ idex = 0;
             <kind>1</kind>
             <string>if(spawnTree == true)
 {
-    tre = instance_create(global.OX + tox, global.OY, trees[idex]); //gross
+    tre = instance_create(global.OX, global.OY, trees[idex]); //gross
     tre.direction += angle;
     tre.tox = self.tox
     tre.depth = DEPTH;
