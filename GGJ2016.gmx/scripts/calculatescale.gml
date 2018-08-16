@@ -1,32 +1,3 @@
-var ox = argument0;
-var oy = argument1;
-var hoz = argument2;
-var obj = argument3;
-var scalar = argument4;
-
-var dy = room_height - oy;
-var dx = room_width - ox;
-var dxo = (dx - (room_width - obj.x));
-if(dxo < 0)
-{
-    dxo *= -1;
-}
-var hzl = dy - (room_height - hoz);
-
-var scl = (dy - (room_height - obj.y)) / dy;
-var sclx = dxo / dx;
-var scly = scl * scalar;
-var spdscl = (scl + sclx) * global.PSpeed;
-
-obj.image_yscale = obj.SCALE * scly;
-//Makes sure Y isn't flipped
-if(obj.image_yscale < 0)
-{
-    obj.image_yscale *= -1;
-}
-obj.image_xscale = obj.SCALE * scly;
-obj.speed = spdscl;
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e83dab8bf9fe414689b655c927c92f7293029a44b1b8bc3ba1a5c9fde076d0ac
+size 618
