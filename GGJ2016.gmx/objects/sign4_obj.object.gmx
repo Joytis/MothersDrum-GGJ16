@@ -88,6 +88,7 @@ if(y == room_height + 100)
           <argument>
             <kind>1</kind>
             <string>global.has_won = true;
+audio_stop_all();
 instance_destroy();  
 </string>
           </argument>

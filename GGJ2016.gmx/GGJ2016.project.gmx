@@ -92,6 +92,7 @@
     <background>background\you_win</background>
     <backgrounds name="Menu">
       <background>background\bg_title_bg</background>
+      <background>background\crdts_bkg</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>

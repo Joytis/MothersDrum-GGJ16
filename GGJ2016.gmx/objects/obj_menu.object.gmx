@@ -33,6 +33,7 @@ menu[2] = "Quit";
 DropAlpha = 0;
 TextAlpha = 0;
 angle = -1;
+audio_stop_all();
 
 audio_play_sound(snd_menu_music, 10, true);
 selectLag = 12;

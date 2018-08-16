@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Initization Script
 
+audio_stop_all();
 //MOUNTAIN
 mount = instance_create(512, 200, mount_obj);
 mom = instance_create(512, 170, mom_obj);
